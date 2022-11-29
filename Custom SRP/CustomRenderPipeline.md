@@ -23,6 +23,16 @@
 黑色背景下的UV球形透明贴图
 </p>
 
+我放了一些不透明的cube在测试场景中，红色的材质使用Standard shader， 绿色的和黄色材质使用Unlit/Color shader。再加入蓝色Spheres使用Standard shader更改Rendering Mode为Transparent， 白色Spheres使用Unlit/Transparent shader， 这两个都要使用上面的球形透明贴图。
+
+<p align="center" >
+<img  align="center" src="CustomRenderPipeline\scene.png" style="background-color: black">
+</p>
+
+<p align="center" style="font-size:14px;color:#C0C0C0;">
+测试场景
+</p>
+
 ## 1.2 流水线Asset
 现在Unity用的是默认的渲染流水线。为了用自定义渲染流水线来替换它，我们必须先为它创建一个资产类型。我们直接使用跟Unity普通渲染流水线一样的文件结构。在Assets目录下创建Custom RP文件夹，再在其目录下创建Runtime子文件夹，在此文件夹下新建一个CustomRenderPipelineAsset 脚本。
 
